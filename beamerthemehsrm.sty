@@ -132,15 +132,15 @@
 	% Sans serif math option
 	\if@doSans%
 		\usepackage[no-math]{fontspec}%	
-		\setmainfont{Flama-Light}%
+    \setmainfont{Maven Pro}%
 	\else%
 		\usepackage{fontspec}%	
 		\usefonttheme[onlymath]{serif}%
 	\fi%
-	\newfontfamily\Light{Flama-Light}%
-	\newfontfamily\Book{Flama-Book}%
-	\newfontfamily\Medium{Flama-Medium}%
-	\setsansfont{Flama-Light}%
+  \newfontfamily\Light[UprightFont={* Regular}]{Maven Pro}%
+	\newfontfamily\Book[UprightFont={* Black}]{Maven Pro}%
+  \newfontfamily\Medium[UprightFont={* Medium}]{Maven Pro}%
+	\setsansfont[UprightFont={* Regular}]{Maven Pro}%
 \fi%
 
 \renewcommand\UrlFont{\Medium}
