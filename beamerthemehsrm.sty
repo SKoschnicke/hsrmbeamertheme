@@ -132,16 +132,17 @@
 	% Sans serif math option
 	\if@doSans%
 		\usepackage[no-math]{fontspec}%	
-    \setmainfont{Maven Pro}%
+    \setmainfont{FiraSans-Light}%
 	\else%
 		\usepackage{fontspec}%	
 		\usefonttheme[onlymath]{serif}%
 	\fi%
-  \newfontfamily\Light[UprightFont={* Regular}]{Maven Pro}%
-	\newfontfamily\Book[UprightFont={* Black}]{Maven Pro}%
-  \newfontfamily\Medium[UprightFont={* Medium}]{Maven Pro}%
-	\setsansfont[UprightFont={* Regular}]{Maven Pro}%
+  \newfontfamily\Light{FiraSans-Light}%
+  \newfontfamily\Book{FiraSans-Book}%
+  \newfontfamily\Medium{FiraSans-Medium}%
+  \setsansfont{FiraSans-Light}%
 \fi%
+
 
 \renewcommand\UrlFont{\Medium}
 % Titlepage
